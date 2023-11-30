@@ -1,0 +1,40 @@
+.notable-drops {
+  padding: 40px 0 20px !important;
+  .section-title {
+    padding-bottom: 20px;
+  }
+  .arrows {
+    right: 0;
+    top: -70px;
+    // position: absolute;
+    span {
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-left: 10px;
+      box-shadow: $shadow;
+      background: $danger;
+      border-radius: 100px;
+      display: inline-block;
+      i {
+        color: $white;
+        line-height: 0px;
+        position: relative;
+      }
+    }
+  }
+  .notable-drops-slider {
+    position: relative;
+  }
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width:767px) {
+  .notable-drops {
+    .section-title {
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+
+//****************************** media query End ********************

@@ -1,0 +1,205 @@
+.header {
+  top: 0;
+  right: 0;
+  z-index: 4;
+  padding: 10px 0px;
+  background: $white;
+  box-shadow: $shadow;
+  left: $sidebar-width;
+  position: fixed !important;
+  transition: all 0.3s ease-in;
+  &.bg-primary {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .brand-logo {
+    .logo-img {
+      width: 50px;
+    }
+    .logo-text {
+      width: 150px;
+    }
+  }
+  &.landing {
+    top: 0px;
+    left: 0px;
+    padding: 18px 0px;
+    li {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border: none !important;
+    }
+    .brand-logo {
+      display: block;
+      margin: 0px !important;
+      img {
+        filter: none;
+        margin-right: 10px;
+      }
+      span {
+        top: 0;
+        display: block;
+      }
+    }
+  }
+}
+.navbar-toggle::after {
+  border-top            : 0px;
+  margin-left           : 10.2px;
+  display               : inline-block;
+  font-style            : normal;
+  font-variant          : normal;
+  text-rendering        : auto;
+  -webkit-font-smoothing: antialiased;
+  font-family           : bootstrap-icons !important;
+  font-weight           : 700;
+  content               : "\f270";
+}
+
+//******** Landing page start ********//
+
+.navigation {
+  .navbar {
+    padding: 0px;
+    background-color: transparent !important;
+    .scrollable-menu {
+      height: auto;
+      max-height: 230px;
+      overflow-x: hidden;
+    }
+    ul {
+      margin-left: auto;
+      align-items: center;
+      &>li {
+        width: 100%;
+        padding: 0px 7px;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.85);
+        &>a {
+          font-size: 16px;
+          font-weight: $headings-font-weight;
+        }
+      }
+    }
+  }
+}
+
+//******** Landing page end ********//
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 1023px) {
+  .show {
+    display: block
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    .brand-logo {
+      display: none;
+      margin: 0px 20px 0px 0px;
+    }
+    &.landing {
+      li {
+        padding-left: 1rem;
+        justify-content: center;
+      }
+    }
+  }
+  .navigation {
+    .navbar {
+      ul {
+        margin-top: 5px;
+        &>li {
+          margin: 0 15px;
+          padding: 7px 7px;
+          border-bottom: 1px solid $border-color;
+          &>a {
+            &::after {
+              top: 25px;
+              right: 15px;
+              position: absolute;
+            }
+          }
+        }
+        .dropdown-menu {
+          border: 0px;
+          padding: 0px;
+          a {
+            padding: 15px;
+            color: $body-color;
+            border-bottom: 1px solid $border-color;
+            &:last-child {
+              border: 0px;
+            }
+            i,
+            h6 {
+              color: $primary;
+            }
+            p {
+              margin-bottom: 0;
+              color: $body-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    left: 0;
+    padding: 10px 0px;
+    background: $white;
+    .brand-logo {
+      display: block;
+      img {
+        filter: none;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .navigation {
+    .navbar {
+      ul {
+        margin-top: 5px;
+        &>li {
+          padding: 0.5rem ;
+          border-bottom: 1px solid $border-color;
+          &>a {
+            &::after {
+              top: 25px;
+              right: 15px;
+              position: absolute;
+            }
+          }
+        }
+        .dropdown-menu {
+          border: 0px;
+          padding: 0px;
+          a {
+            padding: 15px;
+            color: $body-color;
+            border-bottom: 1px solid $border-color;
+            &:last-child {
+              border: 0px;
+            }
+            i,
+            h6 {
+              color: $primary;
+            }
+            p {
+              margin-bottom: 0;
+              color: $body-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//****************************** media query Start ********************

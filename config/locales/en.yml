@@ -1,0 +1,13 @@
+en:
+  users:
+    created: 'User created successfully'
+    updated: 'User updated successfully'
+    destroyed: 'User destroyed successfully'
+    errors:
+      not_found: "User not found"
+
+  nft_collections:
+    empty_nft: 'No file received'
+  
+  errors:
+    unprocessable: 'Unprocessable entity'

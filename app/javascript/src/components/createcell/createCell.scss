@@ -1,0 +1,28 @@
+.create-sell-content {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: .75rem;
+    box-shadow: $shadow-lg;
+    padding: 50px 30px 30px;
+    .create-sell-content-icon {
+        top: -40px;
+        width: 75px;
+        height: 75px;
+        color: $white;
+        display: flex;
+        font-size: 30px;
+        position: absolute;
+        margin-bottom: 20px;
+        align-items: center;
+        border-radius: $radius;
+        justify-content: center;
+        background: lighten($warning, 0%);
+        i {
+            line-height: 0px;
+        }
+    }
+    .link {
+        text-decoration: none;
+    }
+}

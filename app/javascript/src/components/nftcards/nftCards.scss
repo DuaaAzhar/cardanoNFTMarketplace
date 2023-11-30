@@ -1,0 +1,628 @@
+.card {
+  padding: 0rem;
+  background: $white;
+  box-shadow: $shadow;
+  margin-bottom: 30px;
+  border-radius: $radius;
+  flex-direction: column;
+  border: 1px solid $border-color;
+  .card-title {
+    font-size: 18px;
+    color: #152c5b;
+    margin-bottom: 0px;
+  }
+  .card-body {
+    margin: 0rem;
+    display: flex;
+    padding: 10px;
+    background: $white;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    flex-direction: column;
+  }
+}
+
+.images {
+  .Cimg {
+    .fit-skeleton {
+      object-fit: fill;
+      margin-top: -4px !important;
+    }
+  }
+}
+
+.section-padding {
+  .images {
+    height: 208px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.trending-slider {
+  .images {
+    height: 255px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.notable-drops-slider {
+  .images {
+    height: 257px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.collections {
+  .images {
+    height: 259px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.onsale {
+  .images {
+    height: 235px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.nfts {
+  padding-right: 0%;
+  .images {
+    height: 315px;
+    .Cimg {
+      .card-img-top {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.Ccard {
+  background: $white;
+  margin-bottom: 30px;
+  box-shadow: $shadow;
+  border-radius: $radius;
+  border: 1px solid $border-color;
+  .images {
+    .Cimg {
+      background: transparent;
+      .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .Cbody {
+    padding: 10px;
+    background: $white;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    .Cname {
+      font-size: 16px;
+      color: #152c5b;
+    }
+    .dashboard-nft {
+      .font-size {
+        padding: 4px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//****************************** media query Start ********************
+@media only screen and (min-width: 1400px) {
+  .onsale {
+    .images {
+      height: 264px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .nfts {
+    .images {
+      height: 258px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 340px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 296px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 294px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .trending-slider {
+    .images {
+      height: 292px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .relateditems{
+    .images {
+      height: 296px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .collections {
+    .images {
+      height: 251px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .nfts {
+    .images {
+      height: 325px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .onsale {
+    .images {
+      height: 310px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 251px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 249px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .trending-slider {
+    .images {
+      height: 247px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .nfts {
+    .images {
+      height: 264px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .onsale {
+    .images {
+      height: 264px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 214px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 207px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 204px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .trending-slider {
+    .images {
+      height: 202px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .relateditems{
+    .images {
+      height: 206px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nfts {
+    .images {
+      height: 185px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .onsale {
+    .images {
+      height: 289px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 244px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 206px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 216px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .trending-slider {
+    .images {
+      height: 210px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .relateditems {
+    .images {
+      height: 206px;
+      .Cimg {
+        .card-img-top {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .onsale {
+    .images {
+      height: 268px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .nfts {
+    .images {
+      height: 268px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .Ccard {
+    .Cbody {
+      .Cname {
+        font-size: 14px;
+      }
+      .dashboard-nft {
+        .font-size {
+          padding: 4px;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 240px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 230px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .nfts {
+    .images {
+      height: 210px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .onsale {
+    .images {
+      height: 210px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .Ccard {
+    .Cbody {
+      h5 {
+        font-size: 17px;
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 210px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 250px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 230px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .explore {
+    .images {
+      height: 250px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .relateditems {
+    .images {
+      height: 230px;
+      .Cimg {
+        .card-img-top {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  .nfts {
+    .images {
+      height: 150px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .onsale {
+    .images {
+      height: 150px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .notable-drops-slider {
+    .images {
+      height: 345px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .section-padding {
+    .images {
+      height: 345px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .collections {
+    .images {
+      height: 170px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .explore {
+    .images {
+      height: 160px;
+      .Cimg {
+        .card-img-top {
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  .relateditems {
+    .images {
+      height: 150px;
+      .Cimg {
+        .card-img-top {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+//****************************** media query End ********************

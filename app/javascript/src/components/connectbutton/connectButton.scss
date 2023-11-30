@@ -1,0 +1,40 @@
+.wallet-dropdown {
+  position: relative;
+  .hover-dropdown {
+    top: 100%;
+    right: 15px;
+    display: none;
+    min-width: 260px;
+    overflow: hidden;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgb(82 105 160 / 30%);
+    >li {
+      padding: 0 !important;
+      a {
+        display: block;
+        padding: 13px 19px;
+
+        &:hover {
+          background: #f4f7fa;
+        }
+      }
+    }
+  }
+  &:hover {
+    .hover-dropdown {
+      display: block;
+    }
+  }
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 1023px) {
+  .wallet-dropdown {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+//****************************** media query End ********************

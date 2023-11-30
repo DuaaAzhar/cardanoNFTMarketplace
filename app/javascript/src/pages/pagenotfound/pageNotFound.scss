@@ -1,0 +1,27 @@
+.page-not-found {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  .img-fluid {
+    height: auto;
+    max-width: 35%;
+  }
+}
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 1023px) {
+  .page-not-found {
+    .img-fluid {
+        max-width: 45%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-not-found {
+    .img-fluid {
+      max-width: 70%;
+    }
+  }
+}
+
+//****************************** media query End ********************

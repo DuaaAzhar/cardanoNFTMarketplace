@@ -1,0 +1,78 @@
+.card-body {
+  .left-col {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    .icon {
+      width: 100%;
+      height: 42px;
+      display: flex;
+      padding: 12px;
+      font-weight: 500;
+      align-items: center;
+      -webkit-box-align: center;
+      background: rgb(255, 255, 255);
+      border-bottom: 1px solid rgb(229, 232, 235);
+    }
+  }
+}
+.owned-card {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: row;
+  .owned-text {
+    padding: 5px 18px;
+    margin-right: 17px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+}
+.price-usd {
+  font-size: 20px;
+}
+.price-card {
+  display: flex;
+}
+#accordionExample {
+  .accordion-item {
+    .accordion-header {
+      button {
+        z-index: 1;
+      }
+    }
+  }
+}
+.accordion-button {
+  z-index: 1;
+}
+.list-group {
+  text-transform: capitalize;
+}
+.avatar-detail-img {
+  max-width: 30px;
+  border-radius: 100px;
+}
+.cardano-icon {
+  width: 25px;
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 1200px) {
+  .owned-card {
+    width: 260px;
+    display: block;
+    .owned-text {
+      margin-bottom: 12px;
+    }
+  }
+  .price-card {
+    display: block;
+  }
+  .top-bid {
+    .btn {
+      min-width: 100%;
+    }
+  }
+}
+//****************************** media query End ********************

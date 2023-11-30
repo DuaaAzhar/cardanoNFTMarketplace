@@ -1,0 +1,17 @@
+.filter-nav {
+  .text-link{
+    color: $dark;
+    padding: 3px 20px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: $radius;
+    text-decoration: none;
+    &.active {
+      color: $white;
+      background: $primary;
+    }
+  }
+}
+.collection_items {
+  margin-bottom: 40px;
+}

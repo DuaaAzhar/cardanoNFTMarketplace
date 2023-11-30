@@ -1,0 +1,137 @@
+.sidebar {
+  z-index: 3;
+  padding-left: 2rem;
+  width: 200px;
+  height: calc(100% - 0px);
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.05);
+  .menu {
+    margin-top: 100px;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        a {
+          display: flex;
+          color: #62759d;
+          padding: 5px 8px;
+          min-height: 3.5rem;
+          align-items: center;
+          text-decoration: none;
+          .nav-text {
+            padding: 3px 8px;
+          }
+        }
+        i {
+          font-size: 20px;
+        }
+        &.logout {
+          bottom: 0;
+          width: 170px;
+          position: fixed;
+          background-color: #fff;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          a {
+            .nav-text {
+              display: block;
+              color: #008AFF;
+            }
+          svg {
+                color: #008AFF;
+                opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 991px) {
+  .menu {
+    margin: 0px 20px 0px 0px;
+    ul {
+      li {
+        i {
+          margin-right: 0px;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          a {
+            .nav-text {
+              display: none;
+            }
+          }
+        }
+        &.logout {
+          right: auto;
+          width: auto;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    border-radius: 0px;
+    top: auto !important;
+    .menu {
+      padding: 0px;
+      margin-top: 0px;
+      margin-right: 0%;
+      ul {
+        display: flex;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-evenly;
+        li {
+          &:hover,
+          &:active,
+          &:focus {
+            a {
+              .nav-text {
+                display: none;
+              }
+            }
+          }
+          a {
+            color: gray;
+            justify-content: center;
+            font-size: 1.2rem !important;
+            &:hover,
+            &:active,
+            &:focus {
+              color: #008AFF;
+            }
+            .nav-text {
+              display: none;
+            }
+          }
+          &.logout {
+            bottom: 0;
+            left: auto;
+            right: auto;
+            width: auto;
+            position: relative;
+            a {
+              padding-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//****************************** media query End ********************

@@ -1,0 +1,114 @@
+.footer {
+  z-index: -1;
+  bottom: 1.5px;
+  padding: 21px 0px;
+  position: relative;
+  background: #000000; // Default Color : #171347
+  border-top: 1px solid rgba(143, 84, 84, 0.09);
+
+  .copyright {
+    text-align: left;
+    position: relative;
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $body-color;
+      a {
+        color: $primary;
+        font-weight: 700;
+      }
+    }
+  }
+  .footer-social {
+    text-align: right;
+    li {
+      display: inline-block;
+      i {
+        opacity: 0.5;
+        padding: 0px 10px;
+        color: $body-color;
+      }
+    }
+  }
+}
+.bottom {
+  left: 0px;
+  position: relative;
+  background: #000000; // Default Color : #171347
+  &::before {
+    content: "";
+    left: 0;
+    right: 0;
+    height: 0;
+    top: -50px;
+    width: 100%;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 51px 98vw;
+    border-color: transparent transparent #000000 transparent; // Default Color : #171347
+  }
+  .threeKongs-style{
+    img{
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  .bottom-logo {
+    p {
+      line-height: 30px;
+      font-weight: 400;
+      color: $body-color;
+    }
+  }
+  .bottom-widget {
+    .widget-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        a {
+          font-weight: 400;
+          color: $body-color;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//****************************** media query Start ********************
+
+@include respond("lg") {
+  .threeKongs-style img{
+  width: 100%;
+  }
+}
+
+@include respond("md") {
+  .bottom {
+    .bottom-widget {
+        margin-bottom: 30px;
+    }
+  .threeKongs-style img{
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include respond("xs") {
+ .footer{
+   padding: 0rem 1rem;
+
+ }
+ .bottom{
+   padding: 0rem 1rem;
+ }
+}
+
+//****************************** media query End ********************

@@ -1,0 +1,35 @@
+.trending-category {
+  padding: 40px 0 10px !important;
+  .arrows {
+    span {
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-left: 10px;
+      box-shadow: $shadow;
+      background: $danger;
+      border-radius: 100px;
+      display: inline-block;
+      i {
+        top: -2px;
+        color: $white;
+        line-height: 0px;
+        position: relative;
+      }
+    }
+  }
+  .section-title {
+    margin-bottom: 25px !important;
+  }
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 767px) {
+  .trending-category {
+    .section-title {
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+
+//****************************** media query End ********************

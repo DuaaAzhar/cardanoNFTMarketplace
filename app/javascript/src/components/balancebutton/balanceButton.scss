@@ -1,0 +1,62 @@
+.balance-wallet-dropdown {
+  position: relative;
+  border-radius: 8px;
+  .b-dropdown {
+    .btn {
+      color: #62759d ;
+      &:hover {
+        color: #62759d ;
+        background: #f4f7fa;
+      }
+      .img {
+        width: 28px;
+      }
+    }
+    .hover-dropdown {
+      right: 0;
+      top: 100%;
+      display: none;
+      overflow: hidden;
+      min-width: 260px;
+      position: absolute;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgb(82 105 160 / 30%);
+      >li {
+        padding: 0 ;
+        a {
+          display: block;
+          padding: 13px 19px;
+          &:hover {
+            background: #f4f7fa;
+          }
+        }
+      }
+    }
+    &:hover {
+      .hover-dropdown {
+        display: block;
+      }
+    }
+    .dropdown-custom {
+      margin-top: 1px;
+    }
+  }
+  .btn {
+    color: #62759d ;
+    &:hover {
+      color: #62759d ;
+      background: #f4f7fa;
+    }
+  }
+}
+
+//****************************** media query Start ********************
+
+@media only screen and (max-width: 1023px) {
+  .balance-wallet-dropdown {
+    margin-left: 0.5rem;
+  }
+}
+
+//****************************** media query End ********************

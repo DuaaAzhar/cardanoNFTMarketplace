@@ -1,0 +1,34 @@
+development:
+  clients:
+    default:
+      uri: 'mongodb+srv://<%= Rails.application.credentials.database[:username] %>:<%= Rails.application.credentials.database[:password] %>@cluster-0.5q2xi.mongodb.net/<%= Rails.application.credentials.database[:dev_name] %>?retryWrites=true&w=majority'
+#      uri: "mongodb://127.0.0.1:27017/cardano_db?compressors=disabled&gssapiServiceName=mongodb"
+      # database: <%= Rails.application.credentials.database[:name] %>
+      # hosts:
+      #   - <%= Rails.application.credentials.database[:host] %>:<%= Rails.application.credentials.database[:port] %>
+      # options:
+      #   user: <%= Rails.application.credentials.database[:username] %>
+      #   password: <%= Rails.application.credentials.database[:password] %>
+      #   roles:
+      #     - 'dbOwner'
+      #   auth_mech: :scram
+      #   auth_source: admin
+  options:
+    preload_models: false
+    raise_not_found_error: false
+
+staging:
+  clients:
+    default:
+      uri: 'mongodb+srv://<%= Rails.application.credentials.database[:username] %>:<%= Rails.application.credentials.database[:password] %>@cluster-0.5q2xi.mongodb.net/<%= Rails.application.credentials.database[:staging_name] %>?retryWrites=true&w=majority'
+  options:
+    preload_models: false
+    raise_not_found_error: false
+
+production:
+  clients:
+    default:
+      uri: 'mongodb+srv://<%= Rails.application.credentials.database[:username] %>:<%= Rails.application.credentials.database[:password] %>@cluster-0.5q2xi.mongodb.net/<%= Rails.application.credentials.database[:staging_name] %>?retryWrites=true&w=majority'
+  options:
+    preload_models: false
+    raise_not_found_error: false
